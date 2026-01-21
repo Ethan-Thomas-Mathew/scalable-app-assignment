@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  /* Lighter borders for that premium glass look */
+  --glass-border: rgba(255, 255, 255, 0.2); 
+  --glass-highlight: rgba(255, 255, 255, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-highlight: rgba(255, 255, 255, 0.05);
+  }
+}
+
+body {
+  background-color: #f0f0f0;
+  /* Deep, rich animated gradient background */
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 100%, hsla(225,39%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #111;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.dark body {
+  background-color: #050505;
+  background-image: 
+    radial-gradient(circle at 20% 20%, #1a1a2e 0%, #000000 70%),
+    radial-gradient(circle at 80% 80%, #16213e 0%, #000000 70%);
+  color: #fff;
+}
+
+/* --- THE ULTRA REAL GLASS --- */
+.real-glass {
+  /* High Blur for "Frosted" effect */
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  
+  /* Extremely subtle background (mostly transparent) */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  
+  /* Crisp white borders */
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  
+  box-shadow: 
+    0 8px 32px 0 rgba(0, 0, 0, 0.1),
+    inset 0 0 30px rgba(255, 255, 255, 0.05); /* Inner Glow */
+    
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dark .real-glass {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth Slide Up Hover Effect */
+.glass-hover-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  border-top-color: rgba(255,255,255,0.6);
+  z-index: 10;
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Animations */
+.animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.custom-scrollbar::-webkit-scrollbar { width: 4px; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.3); border-radius: 10px; }
