@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/scalable-app-assignment/_next/static/chunks/134934131f403ad9.js","/scalable-app-assignment/_next/static/chunks/7c92e96509cd355e.js"],""]
+3:I[97367,["/scalable-app-assignment/_next/static/chunks/ff1a16fafef87110.js","/scalable-app-assignment/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"ouMsDjHmRd2cbQbE8OvtX","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"flex flex-col items-center justify-center h-screen bg-gray-900 text-white","children":[["$","h1",null,{"className":"text-5xl font-bold mb-4 text-yellow-500","children":"CryptoX"}],["$","p",null,{"className":"text-xl text-gray-300 mb-8","children":"Secure. Scalable. Fast."}],["$","div",null,{"className":"space-x-4","children":[["$","$L2",null,{"href":"/login","className":"px-8 py-3 bg-blue-600 rounded hover:bg-blue-700 font-bold transition","children":"Login"}],["$","$L2",null,{"href":"/register","className":"px-8 py-3 bg-green-600 rounded hover:bg-green-700 font-bold transition","children":"Register"}]]}]]}],[["$","script","script-0",{"src":"/scalable-app-assignment/_next/static/chunks/7c92e96509cd355e.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
