@@ -8,7 +8,8 @@ export default function DemoBanner() {
   const path = usePathname() || '/';
   const showByDefault = /^\/(login|register)?\/?$/.test(path);
   const [open, setOpen] = useState(showByDefault);
-  useEffect(() => { setOpen(showByDefault); }, [showByDefault]);
+  // On narrow screens the notice would cover the forms, so it starts collapsed there.
+  useEffect(() => { setOpen(showByDefault && window.innerWidth >= 768); }, [showByDefault]);
 
   if (!open) {
     return (

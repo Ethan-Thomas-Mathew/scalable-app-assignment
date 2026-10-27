@@ -1,4 +1,4 @@
 :HL["/scalable-app-assignment/_next/static/chunks/17jimp6jd_5l1.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"login","h":96,"c":"$Q2"}]]
-0:{"b":"JUy6bgFtBypQvMl6_4HNW","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"U_g5VT85gvDth09aXPVTt","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
